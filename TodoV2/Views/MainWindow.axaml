@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:TodoV2.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:TodoV2.Views"
+        mc:Ignorable="d" 
+        d:DesignWidth="250" 
+        d:DesignHeight="300"
+        Width="250" 
+        Height="300"
+        x:Class="TodoV2.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="TodoV2"
+        Content="{Binding Content}"
+        >
+
+  <views:TodoListView/>
+
+</Window>
