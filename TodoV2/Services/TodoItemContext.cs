@@ -22,11 +22,11 @@ namespace TodoV2.Services
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<TodoItem>().HasKey(k => k.id);
+            modelBuilder.Entity<TodoItem>().HasKey(k => k.Id);
 
             modelBuilder.Entity<TodoItem>().HasData(
-                new TodoItem { Description = "Test", IsChecked = true,id= 1 },
-                new TodoItem { Description = "Test 2", IsChecked = true, id = 2 }
+                new TodoItem { Description = "Test", IsChecked = true,Id= 1 },
+                new TodoItem { Description = "Test 2", IsChecked = true, Id = 2 }
             );
         }
 

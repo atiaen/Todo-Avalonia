@@ -25,4 +25,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.9" />
     <PackageReference Include="XamlNameReferenceGenerator" Version="1.6.1" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\TodoListView.axaml.cs">
+      <DependentUpon>TodoListView.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

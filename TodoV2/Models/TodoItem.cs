@@ -8,7 +8,7 @@ namespace TodoV2.Models
 {
     public class TodoItem
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Description { get; set; } = "";
         public bool IsChecked { get; set; }
     }

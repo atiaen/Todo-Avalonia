@@ -13,6 +13,9 @@ namespace TodoV2.ViewModels
     {
         public TodoListViewModel List { get; }
 
+        private string Test = "test text";
+
+
         ViewModelBase content;
         TodoItemContext context = App.Current.Services.GetService<TodoItemContext>();
 
